@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetería Fantástica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Juguetería Fantástica</h1>
+  </header>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="diente.jpg" alt="Muñeco Max">
+      <h3>Muñeco Max</h3>
+      <p class="precio">$100</p>
+      <button onclick="agregarAlCarrito('Muñeco Max', 100)">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="nerf.png" alt="Nerf Gun">
+      <h3>Nerf Gun</h3>
+      <p class="precio">$2480</p>
+      <button onclick="agregarAlCarrito('Nerf Gun', 2480)">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="terreneitor.jpg" alt="Terreneitor">
+      <h3>Terreneitor</h3>
+      <p class="precio">$3200</p>
+      <button onclick="agregarAlCarrito('Terreneitor', 3200)">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="fut.jpg" alt="Balón de Fútbol">
+      <h3>Balón de Fútbol</h3>
+      <p class="precio">$20000</p>
+      <button onclick="agregarAlCarrito('Balón de Fútbol', 20000)">Agregar al Carrito</button>
+    </div>
+  </div>
+
+  <div class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito">
+      <!-- La lista del carrito se mostrará aquí -->
+    </ul>
+    <p>Total: $<span id="total">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
